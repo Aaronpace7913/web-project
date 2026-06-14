@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spanish &amp; Cultural Exchange | Aaron Pace</title>
     <!-- My own from-scratch stylesheet (relative path, up one folder) -->
-    <link rel="stylesheet" href="scratch.css">
+    <link rel="stylesheet" href="../css/scratch.css">
 </head>
 <body>
 
     <!-- DIV 1: fixed navigation bar back to the professional pages + web app -->
     <div id="topbar">
-        <a href="index.html">&larr; Home (Pro Site)</a>
-        <a href="resume.html">Résumé</a>
+        <a href="../index.html">&larr; Home (Pro Site)</a>
+        <a href="../resume.html">Résumé</a>
         <a href="app.html">Spanish Quiz App</a>
         <a href="#tableau">Data</a>
         <a href="#video">Video</a>
@@ -22,7 +22,7 @@
 
     <!-- DIV 2: hero banner with a custom image (not from Bootstrap) -->
     <div id="hero">
-        <img src="hero.jpg" alt="Hola Mundo banner — Spanish and cultural exchange">
+        <img src="../images/hero.jpg" alt="Hola Mundo banner — Spanish and cultural exchange">
     </div>
 
     <!-- DIV 3: centered main content column -->
@@ -67,7 +67,7 @@
                     </ul>
                 </li>
             </ol>
-            <img src="flags.png" alt="Flags of Spanish-speaking countries"
+            <img src="../images/flags.png" alt="Flags of Spanish-speaking countries"
                  style="max-width:100%; margin-top:10px;">
         </div>
 
@@ -97,21 +97,19 @@
         </div>
 
         <!-- Card: INTERACTIVE TABLEAU GRAPH -->
+        <!-- Card: INTERACTIVE TABLEAU GRAPH -->
         <div class="card" id="tableau">
             <h2>The 100 Most-Spoken Languages</h2>
-            <p>Where does Spanish rank among the world's languages? It's near the very top &mdash;
+            <p>Where does Spanish rank among the world's languages? It's near the very top —
                 second only to Chinese by total speakers. Explore this live, interactive Tableau
-                dashboard (a Tableau "Viz of the Day") &mdash; click, hover, and use the controls
-                to dig into the data:</p>
+                dashboard — click, hover, and use the controls to dig into the data:</p>
 
-            <!--  ====================  HOW TO USE A DIFFERENT VIZ  ====================
-                  This uses Tableau's classic embed. The viz is set by the 'name' param
-                  below: "The100Most-SpokenLanguagesintheWorld/TotalSpeaker".
+            <div class="tableau-responsive">
+                <iframe
+                    src="https://public.tableau.com/views/The100Most-SpokenLanguagesintheWorld/TotalSpeaker?:showVizHome=no&:embed=true"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
 
-                  To swap it for any other viz:
-                  1) Go to public.tableau.com, open one that LOADS, click Share → Embed Code.
-                  2) Paste that whole code here in place of this block, OR just change the
-                     'name' param to your viz's  Workbook/Sheet  (the part after /views/).
-                  ===================================================================== -->
-            <div class="tableauPlaceholder" id="vizContainer" style="position: relative; width:100%;">
-                <object class="tableauViz" 
