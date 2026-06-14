@@ -1,0 +1,80 @@
+/* ============================================================
+   custom.css — Overrides for the Bootstrap theme.
+   IMPORTANT: We never edit Bootstrap's own files. This sheet is
+   loaded AFTER Bootstrap so these rules win the cascade.
+   ============================================================ */
+
+:root {
+    --navy: #0d2240;
+    --gold: #c8a24b;
+    --accent: #c64e2e;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #25303b;
+}
+
+/* Smooth scrolling + offset so anchor targets aren't hidden under the sticky navbar */
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 80px; }
+
+/* --- Navbar override (Bootstrap default is plain) --- */
+.navbar.navbar-custom {
+    background-color: var(--navy);
+    border-bottom: 3px solid var(--gold);
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+}
+.navbar-custom .nav-link:hover {
+    color: var(--gold) !important;
+}
+
+/* --- Hero section --- */
+.hero {
+    background: linear-gradient(135deg, var(--navy) 0%, #1c3a63 100%);
+    color: #fff;
+    padding: 90px 0;
+}
+.hero h1 { font-weight: 700; }
+.hero .lead { color: #d8e2ef; }
+
+/* --- Buttons: override Bootstrap primary --- */
+.btn-gold {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--navy);
+    font-weight: 600;
+}
+.btn-gold:hover {
+    background-color: #b18f3e;
+    color: #fff;
+}
+
+/* --- Section headings --- */
+.section-title {
+    color: var(--navy);
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 28px;
+}
+
+/* --- Cards --- */
+.feature-card {
+    border: none;
+    box-shadow: 0 4px 14px rgba(13, 34, 64, 0.08);
+    transition: transform 0.15s ease;
+}
+.feature-card:hover { transform: translateY(-4px); }
+
+/* --- Resume specific --- */
+.resume-job-date { color: var(--accent); font-weight: 600; }
+.resume-section h3 { color: var(--navy); }
+
+/* --- Footer --- */
+.site-footer {
+    background-color: var(--n

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- scratch.html — Built from a blank file. No Bootstrap used here.
+     Topic: Spanish & Cultural Exchange. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish &amp; Cultural Exchange | Aaron Pace</title>
+    <!-- My own from-scratch stylesheet (relative path, up one folder) -->
+    <link rel="stylesheet" href="../css/scratch.css">
+</head>
+<body>
+
+    <!-- DIV 1: fixed navigation bar back to the professional pages + web app -->
+    <div id="topbar">
+        <a href="../index.html">&larr; Home (Pro Site)</a>
+        <a href="../resume.html">Résumé</a>
+        <a href="app.html">Spanish Quiz App</a>
+        <a href="#tableau">Data</a>
+        <a href="#video">Video</a>
+    </div>
+
+    <!-- DIV 2: hero banner with a custom image (not from Bootstrap) -->
+    <div id="hero">
+        <img src="../images/hero.jpg" alt="Hola Mundo banner — Spanish and cultural exchange">
+    </div>
+
+    <!-- DIV 3: centered main content column -->
+    <div id="main">
+
+        <h1>Spanish &amp; Cultural Exchange</h1>
+        <p>Learning Spanish changed how I see the world. After two years living and serving
+            across Spanish-speaking communities, I came to love not just the language but the
+            <span class="es">cultura</span> behind it — the food, the music, and the people.
+            This page is a small celebration of that.</p>
+
+        <!-- On-page anchor navigation -->
+        <p id="section-nav">
+            Jump to:
+            <a href="#countries">Countries</a>
+            <a href="#why">Why It Matters</a>
+            <a href="#video">Video</a>
+            <a href="#tableau">Data</a>
+        </p>
+
+        <!-- Card with the NESTED LIST (unordered list inside an ordered list) -->
+        <div class="card" id="countries">
+            <h2>Where Spanish Is Spoken</h2>
+            <p>Spanish is an official language in 20+ countries. A few I find fascinating:</p>
+            <ol>
+                <li><strong>Spain</strong> — where the language began
+                    <ul>
+                        <li>Flamenco music and dance</li>
+                        <li>La Tomatina festival</li>
+                    </ul>
+                </li>
+                <li><strong>Mexico</strong> — the most Spanish speakers of any country
+                    <ul>
+                        <li>Día de los Muertos</li>
+                        <li>Incredible regional cuisine</li>
+                    </ul>
+                </li>
+                <li><strong>Argentina</strong>
+                    <ul>
+                        <li>Tango</li>
+                        <li>Distinctive "vos" grammar</li>
+                    </ul>
+                </li>
+            </ol>
+            <img src="../images/flags.png" alt="Flags of Spanish-speaking countries"
+                 style="max-width:100%; margin-top:10px;">
+        </div>
+
+        <!-- Card: why it matters -->
+        <div class="card" id="why">
+            <h2>Why It Matters to Me</h2>
+            <p>Being bilingual isn't just a skill on a résumé — it rewires how you think and
+                connects you to hundreds of millions of people. A few things I gained:</p>
+            <ul>
+                <li>Confidence leading and mentoring people from many backgrounds</li>
+                <li>Patience and empathy from living inside a different culture</li>
+                <li>A lifelong love of learning — <span class="es">¡nunca pares!</span></li>
+            </ul>
+        </div>
+
+        <!-- Card: EMBEDDED YOUTUBE VIDEO -->
+        <div class="card" id="video">
+            <h2>The Bilingual Brain</h2>
+            <p>A short TED-Ed video on what speaking two languages does to your mind:</p>
+            <div class="video-wrap">
+                <!-- TED-Ed videos allow embedding. Swap the ID after the /embed/ to change it. -->
+                <iframe src="https://www.youtube.com/embed/MMmOLN5zBLY"
+                        title="The benefits of a bilingual brain"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Card: INTERACTIVE TABLEAU GRAPH -->
+        <!-- Card: INTERACTIVE TABLEAU GRAPH -->
+        <div class="card" id="tableau">
+            <h2>The 100 Most-Spoken Languages</h2>
+            <p>Where does Spanish rank among the world's languages? It's near the very top —
+                second only to Chinese by total speakers. Explore this live, interactive Tableau
+                dashboard — click, hover, and use the controls to dig into the data:</p>
+
+            <div class="tableau-responsive">
+                <iframe
+                    src="https://public.tableau.com/views/The100Most-SpokenLanguagesintheWorld/TotalSpeaker?:showVizHome=no&:embed=true"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
