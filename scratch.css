@@ -95,3 +95,21 @@ h2 { color: #c64e2e; font-family: Verdana, Geneva, sans-serif; }
     padding: 22px;
 }
 #foot a { color: #f3c75a; }
+
+.tableau-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Adjust ratio if needed */
+    height: 0;
+    overflow: hidden;
+}
+
+.tableau-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
